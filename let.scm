@@ -4,9 +4,10 @@
 ;
 ; Jim Teresco, CSC 433, The College of Saint Rose, Fall 2012
 ;
-; $Id$
+; Version: Fall 2023, Siena College, CSIS-340
 ;
 (define (distance p1 p2)
+  ; these are essentially local variables within the let function
   (let ((x1 (car p1))
 	(y1 (cadr p1))
 	(x2 (car p2))
