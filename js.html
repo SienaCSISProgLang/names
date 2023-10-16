@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Simple example of a JavaScript program with nested functions -->
+<!-- Based on example from Sebesta, p. 220 -->
+<!-- Jim Teresco, CSC 433, The College of Saint Rose, Fall 2012 -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>JavaScript Nested Functions</title>
+<script type="text/javascript">
+function setMessage() {
+
+  function sub1() {
+    var x = 7;
+    sub2();
+  }
+  function sub2() {
+    var y = x;
+    document.getElementById("message").innerHTML = "y=" + y;
+  }
+  var x = 3;
+  sub1();
+}
+</script>
+</head>
+
+<body onload="setMessage();">
+
+<p id="message">JavaScript will replace this.</p>
+
+</body>
+
+</html>
